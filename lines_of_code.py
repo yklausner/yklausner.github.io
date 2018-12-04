@@ -6,10 +6,10 @@ def loc(nb):
     #return sum(len(c['source']) for c in cells if c['cell_type'] == 'code')
     sum = 0 
     for c in cells:
-    	if c['cell_type'] == 'code':
-	    	for line in c['source']:
-	    		if line[0] != '#':
-	    			sum += 1
+        if c['cell_type'] == 'code':
+            for line in c['source']:
+                if str.lstrip(line[0]) != '#':
+                    sum += 1
     return sum 
 
 def run(ipynb_files):
