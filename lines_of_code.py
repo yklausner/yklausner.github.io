@@ -8,7 +8,7 @@ def loc(nb):
     for c in cells:
         if c['cell_type'] == 'code':
             for line in c['source']:
-                if str.lstrip(line[0]) != '#':
+                if str.lstrip(line[0]) != '#' and not line.endswith(".head()"):
                     sum += 1
     return sum 
 
