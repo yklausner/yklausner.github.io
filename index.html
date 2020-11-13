@@ -9644,7 +9644,7 @@ span#login_widget > .button .badge,
 * IPython tree view
 *
 */
-/* We need an invisible input field on top of the sentense*/
+/* I need an invisible input field on top of the sentense*/
 /* "Drag file onto the list ..." */
 .alternate_upload {
   background-color: none;
@@ -10663,22 +10663,22 @@ div.input_area > div.highlight > pre {
  */
 .CodeMirror {
   line-height: 1.21429em;
-  /* Changed from 1em to our global default */
+  /* Changed from 1em to global default */
   font-size: 14px;
   height: auto;
   /* Changed to auto to autogrow */
   background: none;
-  /* Changed from white to allow our bg to show through */
+  /* Changed from white to allow bg to show through */
 }
 .CodeMirror-scroll {
   /*  The CodeMirror docs are a bit fuzzy on if overflow-y should be hidden or visible.*/
-  /*  We have found that if it is visible, vertical scrollbars appear with font size changes.*/
+  /*  I have found that if it is visible, vertical scrollbars appear with font size changes.*/
   overflow-y: hidden;
   overflow-x: auto;
 }
 .CodeMirror-lines {
-  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
-  /* we have set a different line-height and want this to scale with that. */
+  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. I need the em value because */
+  /* I have set a different line-height and want this to scale with that. */
   /* Note that this should set vertical padding only, since CodeMirror assumes
        that horizontal padding will be set on CodeMirror pre */
   padding: 0.4em 0;
@@ -13100,7 +13100,7 @@ div#notebook {
             processEnvironments: true
         },
         // Center justify equations in code and markdown cells. Elsewhere
-        // we use CSS to left justify single line equations in code cells.
+        // I use CSS to left justify single line equations in code cells.
         displayAlign: 'center',
         "HTML-CSS": {
             styles: {'.MathJax_Display': {"margin": 0}},
@@ -13162,10 +13162,10 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="1.-Introduction">1. Introduction<a class="anchor-link" href="#1.-Introduction">&#182;</a></h2><p>As an <a href="http://grantland.com/features/the-economics-moneyball/">article</a> in Grantland, a sports blog, puts it: "The Moneyball thesis is simple: Using statistical analysis, small-market teams can compete by buying assets that are undervalued by other teams and selling ones that are overvalued by other teams."
 The key to Moneyball is figuring out how to know when a player is "undervalued."</p>
-<p>For our project, we will be looking at statistics from the National Basketball Association (<a href="http://www.nba.com">NBA</a>). 
-Among other statistics, we will mainly be looking at statistics that involve some sort of hustling. Hustle statistics try to measure how much effort a player puts in, meaning how hard they play. These statistics include screen assists, deflections, loose balls recovered, charges drawn, contested shots, steals, and offensive rebounds, which we will explain in detail below.  We would like to find some sort of correlation between a hustle score that we calculate ourselves and other statistics.  Ideally, our findings will help teams seek specific players due to their hustle scores. (<a href="https://stats.nba.com/articles/dig-deeper-into-the-game-with-new-defensive-and-hustle-data/">Read more</a> about hustle statistics.)</p>
+<p>For my project, I will be looking at statistics from the National Basketball Association (<a href="http://www.nba.com">NBA</a>). 
+Among other statistics, I will mainly be looking at statistics that involve some sort of hustling. Hustle statistics try to measure how much effort a player puts in, meaning how hard they play. These statistics include screen assists, deflections, loose balls recovered, charges drawn, contested shots, steals, and offensive rebounds, which I will explain in detail below.  I would like to find some sort of correlation between a hustle score that I calculate myself and other statistics.  Ideally, my findings will help teams seek specific players due to their hustle scores. (<a href="https://stats.nba.com/articles/dig-deeper-into-the-game-with-new-defensive-and-hustle-data/">Read more</a> about hustle statistics.)</p>
 <h3 id="1.A-Previous-Work">1.A Previous Work<a class="anchor-link" href="#1.A-Previous-Work">&#182;</a></h3><p>While research has been done related to normal statistics in the NBA (e.g. points per game, assists per game, field goal percentage, rebounds per game) little work has been done related to hustle statistics.  Igor Stančin and Alan Jović of the University of Zagreb published a <a href="https://bib.irb.hr/datoteka/939840.MIPRO_2018_Stancin_Jovic_final_revised.pdf">paper</a> looking into the differences between winning teams and losing teams for several hustle statistics. However, they did not calculate a total hustle score for a player or for a team. Mark White and Kennon Sheldon published a <a href="https://link-springer-com.proxy-um.researchport.umd.edu/article/10.1007/s11031-013-9389-7">paper</a> looking at players' performance before, during, and after their contract years. While they did look at several normal NBA statistics, they did not incorporate advanced hustle statistics into their paper. Landon Drew Laporte wrote a <a href="https://repository.lib.ncsu.edu/bitstream/handle/1840.20/33510/etd.pdf?sequence=1">paper</a> researching hustling in basketball. While his paper does go in depth on how to identify hustlers and how to predict hustling, he does not look for correlation with other statistics.</p>
-<p>Additionally, the hustle statistics from the NBA have only existed since the beginning of the 2016-2017 season. Therefore, not a lot of work has been done concerning them. In our project we try to find significance in the NBA's hustle statistics.</p>
+<p>Additionally, the hustle statistics from the NBA have only existed since the beginning of the 2016-2017 season. Therefore, not a lot of work has been done concerning them. In my project I try to find significance in the NBA's hustle statistics.</p>
 
 </div>
 </div>
@@ -13211,7 +13211,7 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.-Data-Scraping">2. Data Scraping<a class="anchor-link" href="#2.-Data-Scraping">&#182;</a></h2><p>In this section we get all the data that we will be using for our project.</p>
+<h2 id="2.-Data-Scraping">2. Data Scraping<a class="anchor-link" href="#2.-Data-Scraping">&#182;</a></h2><p>In this section I get all the data that I will be using for my project.</p>
 
 </div>
 </div>
@@ -13226,7 +13226,7 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>These functions get statistics from <a href="http://nba.com">NBA.com</a>. We use an automated browser (read more <a href="https://webkit.org/blog/6900/webdriver-support-in-safari-10/">here</a>) instead of a simple get request because the HTML is not fully populated in the request. The scripts on the page populate the table's data. We use JavaScript in the browser to edit elements of the page so that we can simulate clicks to display the full table. We then pull the HTML from the page and pass it to Pandas to create a dataframe.</p>
+<p>These functions get statistics from <a href="http://nba.com">NBA.com</a>. I use an automated browser (read more <a href="https://webkit.org/blog/6900/webdriver-support-in-safari-10/">here</a>) instead of a simple get request because the HTML is not fully populated in the request. The scripts on the page populate the table's data. I use JavaScript in the browser to edit elements of the page so that I can simulate clicks to display the full table. I then pull the HTML from the page and pass it to Pandas to create a dataframe.</p>
 
 </div>
 </div>
@@ -13247,7 +13247,7 @@ Among other statistics, we will mainly be looking at statistics that involve som
     <span class="n">browser</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Safari</span><span class="p">()</span>
     <span class="n">browser</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
     
-    <span class="c1"># Edit HTML so that we can get the whole table</span>
+    <span class="c1"># Edit HTML so that I can get the whole table</span>
     <span class="n">browser</span><span class="o">.</span><span class="n">execute_script</span><span class="p">(</span><span class="s1">&#39;document.getElementsByClassName(&quot;stats-table-pagination__select&quot;)[0].setAttribute(&quot;id&quot;, &quot;btn&quot;)&#39;</span><span class="p">)</span>
     <span class="n">browser</span><span class="o">.</span><span class="n">execute_script</span><span class="p">(</span><span class="s1">&#39;document.getElementById(&quot;btn&quot;).children[0].setAttribute(&quot;id&quot;, &quot;select-all&quot;)&#39;</span><span class="p">)</span>
     <span class="n">nextButton</span> <span class="o">=</span> <span class="n">browser</span><span class="o">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">)</span>
@@ -13306,7 +13306,7 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>These functions read CSV files stored on our git repository.</p>
+<p>These functions read CSV files stored on my git repository.</p>
 
 </div>
 </div>
@@ -13335,7 +13335,7 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.B-Obtain-Hustle-Data-on-Players">2.B Obtain Hustle Data on Players<a class="anchor-link" href="#2.B-Obtain-Hustle-Data-on-Players">&#182;</a></h3><p>This <a href="https://stats.nba.com/players/hustle/?sort=MIN&amp;dir=1&amp;Season=2016-17&amp;SeasonType=Regular%20Season">data</a> consists of several statistics that are related to player hustling. Due to the fact that these advanced statistics have only been available since the 2016-2017 season, we will only be using 2 seasons of data (2016-2017 and 2017-2018).</p>
+<h3 id="2.B-Obtain-Hustle-Data-on-Players">2.B Obtain Hustle Data on Players<a class="anchor-link" href="#2.B-Obtain-Hustle-Data-on-Players">&#182;</a></h3><p>This <a href="https://stats.nba.com/players/hustle/?sort=MIN&amp;dir=1&amp;Season=2016-17&amp;SeasonType=Regular%20Season">data</a> consists of several statistics that are related to player hustling. Due to the fact that these advanced statistics have only been available since the 2016-2017 season, I will only be using 2 seasons of data (2016-2017 and 2017-2018).</p>
 
 </div>
 </div>
@@ -13345,7 +13345,7 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use our getHustleStats function to get the hustle stats for each year</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use my getHustleStats function to get the hustle stats for each year</span>
 <span class="n">hustle16_17</span> <span class="o">=</span> <span class="n">getHustleStats</span><span class="p">(</span><span class="s2">&quot;2016-17&quot;</span><span class="p">)</span> 
 <span class="n">hustle17_18</span> <span class="o">=</span> <span class="n">getHustleStats</span><span class="p">(</span><span class="s2">&quot;2017-18&quot;</span><span class="p">)</span>
 </pre></div>
@@ -13412,8 +13412,8 @@ Among other statistics, we will mainly be looking at statistics that involve som
       <th>% Loose BallsRecovered OFF</th>
       <th>% Loose BallsRecovered DEF</th>
       <th>ChargesDrawn</th>
-      <th>Contested2PT Shots</th>
-      <th>Contested3PT Shots</th>
+      <th>Contested2PT Shots</th>
+      <th>Contested3PT Shots</th>
       <th>ContestedShots</th>
       <th>year</th>
     </tr>
@@ -13548,7 +13548,7 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get regular stats using our getRegularStats function and concatenate tables</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get regular stats using my getRegularStats function and concatenate tables</span>
 <span class="n">regular16_17</span> <span class="o">=</span> <span class="n">getRegularStats</span><span class="p">(</span><span class="s2">&quot;2016-17&quot;</span><span class="p">)</span> 
 <span class="n">regular17_18</span> <span class="o">=</span> <span class="n">getRegularStats</span><span class="p">(</span><span class="s2">&quot;2017-18&quot;</span><span class="p">)</span>
 <span class="n">regularStats</span> <span class="o">=</span> <span class="n">regular16_17</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">regular17_18</span><span class="p">)</span>
@@ -13765,8 +13765,8 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get position data from our getPositions function</span>
-<span class="c1"># We only need the player, position, and year from the table</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get position data from my getPositions function</span>
+<span class="c1"># I only need the player, position, and year from the table</span>
 <span class="n">positions16_17</span> <span class="o">=</span> <span class="n">getPositions</span><span class="p">(</span><span class="mi">2017</span><span class="p">)[[</span><span class="s1">&#39;Player&#39;</span><span class="p">,</span> <span class="s1">&#39;Pos&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">]]</span>
 <span class="n">positions17_18</span> <span class="o">=</span> <span class="n">getPositions</span><span class="p">(</span><span class="mi">2018</span><span class="p">)[[</span><span class="s1">&#39;Player&#39;</span><span class="p">,</span> <span class="s1">&#39;Pos&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">]]</span>
 </pre></div>
@@ -13876,7 +13876,7 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This <a href="https://github.com/yklausner/yklausner.github.io/blob/master/teams_2016_2017.csv">data</a> consists of team statistics related to wins and losses. We use this data to get the number of wins for a team in a given year.</p>
+<p>This <a href="https://github.com/yklausner/yklausner.github.io/blob/master/teams_2016_2017.csv">data</a> consists of team statistics related to wins and losses. I use this data to get the number of wins for a team in a given year.</p>
 
 </div>
 </div>
@@ -13886,7 +13886,7 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use our getTeams function to read from CSV files and concatenate together</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use my getTeams function to read from CSV files and concatenate together</span>
 <span class="n">teamsWins16_17</span> <span class="o">=</span> <span class="n">getTeams</span><span class="p">(</span><span class="s1">&#39;teams_2016_2017.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;2016-17&#39;</span><span class="p">)</span> 
 <span class="n">teamsWins17_18</span> <span class="o">=</span> <span class="n">getTeams</span><span class="p">(</span><span class="s1">&#39;teams_2017_2018.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-18&#39;</span><span class="p">)</span>
 <span class="n">teamWinsTable</span> <span class="o">=</span> <span class="n">teamsWins16_17</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">teamsWins17_18</span><span class="p">)</span>
@@ -14053,7 +14053,7 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use our getSalaries function to read CSV file</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use my getSalaries function to read CSV file</span>
 <span class="n">salaryTable</span> <span class="o">=</span> <span class="n">getSalaries</span><span class="p">(</span><span class="s1">&#39;player_salaries.csv&#39;</span><span class="p">)</span>
 <span class="n">salaryTable</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -14176,7 +14176,7 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use our getTeams function to read CSV files and concatenate tables</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use my getTeams function to read CSV files and concatenate tables</span>
 <span class="n">teamStats_16_17</span> <span class="o">=</span> <span class="n">getTeams</span><span class="p">(</span><span class="s2">&quot;team_stats_2016_2017.csv&quot;</span><span class="p">,</span> <span class="s1">&#39;2016-17&#39;</span><span class="p">)</span> 
 <span class="n">teamStats_17_18</span> <span class="o">=</span> <span class="n">getTeams</span><span class="p">(</span><span class="s2">&quot;team_stats_2017_2018.csv&quot;</span><span class="p">,</span> <span class="s1">&#39;2017-18&#39;</span><span class="p">)</span> 
 <span class="n">teamStatsTable</span> <span class="o">=</span> <span class="n">teamStats_16_17</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">teamStats_17_18</span><span class="p">)</span>
@@ -14375,8 +14375,8 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.-Clean-Data">3. Clean Data<a class="anchor-link" href="#3.-Clean-Data">&#182;</a></h2><h3 id="3.A-Clean-Hustle-and-Position-Data">3.A Clean Hustle and Position Data<a class="anchor-link" href="#3.A-Clean-Hustle-and-Position-Data">&#182;</a></h3><p>After getting all the data needed for our project, we need to clean the data so that we are able to use each table easily (short, informative <a href="https://medium.com/datadriveninvestor/data-cleaning-for-data-scientist-363fbbf87e5f">read</a> on cleaning data).</p>
-<p>First, we merge the hustleStats table and the positionsTable on the player and year columns in order to add the positions to the hustleStats table. We then print out any players in the merged table with a null position to see if any players were not assigned a position properly, meaning the two tables had different names for these players.</p>
+<h2 id="3.-Clean-Data">3. Clean Data<a class="anchor-link" href="#3.-Clean-Data">&#182;</a></h2><h3 id="3.A-Clean-Hustle-and-Position-Data">3.A Clean Hustle and Position Data<a class="anchor-link" href="#3.A-Clean-Hustle-and-Position-Data">&#182;</a></h3><p>After getting all the data needed for my project, I need to clean the data so that I are able to use each table easily (short, informative <a href="https://medium.com/datadriveninvestor/data-cleaning-for-data-scientist-363fbbf87e5f">read</a> on cleaning data).</p>
+<p>First, I merge the hustleStats table and the positionsTable on the player and year columns in order to add the positions to the hustleStats table. I then print out any players in the merged table with a null position to see if any players were not assigned a position properly, meaning the two tables had different names for these players.</p>
 
 </div>
 </div>
@@ -14438,8 +14438,8 @@ Among other statistics, we will mainly be looking at statistics that involve som
       <th>% Loose BallsRecovered OFF</th>
       <th>% Loose BallsRecovered DEF</th>
       <th>ChargesDrawn</th>
-      <th>Contested2PT Shots</th>
-      <th>Contested3PT Shots</th>
+      <th>Contested2PT Shots</th>
+      <th>Contested3PT Shots</th>
       <th>ContestedShots</th>
       <th>year</th>
       <th>Pos</th>
@@ -15582,7 +15582,7 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As seen above, there are a number of players whose position was not set properly.  After looking closely into each case, we realized what was going wrong.</p>
+<p>As seen above, there are a number of players whose position was not set properly.  After looking closely into each case, I realized what was going wrong.</p>
 <ol>
 <li>For a number of the players, in one table they had a roman numeral added to the end of their name (e.g. "II") and not in the other table. For example, John Lucas III and John Lucas.  </li>
 <li>Some players in one table had suffixes such as "Jr." and not in the other table. For example, Kelly Oubre Jr. and Kelly Oubre.  </li>
@@ -15590,7 +15590,7 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <li>Taurean Prince — In one table he was named "Taurean Prince" and in the other table he was named "Taurean Waller-Prince".</li>
 <li>Nene — In one table he was named "Nene" and in the other table he was named "Nene Hilario". </li>
 </ol>
-<p>We also drop all duplicate rows.</p>
+<p>I also drop all duplicate rows.</p>
 
 </div>
 </div>
@@ -15707,8 +15707,8 @@ Among other statistics, we will mainly be looking at statistics that involve som
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>After cleaning the data some more, we then merge the hustleStats table and the postionsTable again.<br>
-We then print the rows in the hustleStats that have a null position to see which player names are still inconsistent.</p>
+<p>After cleaning the data some more, I then merge the hustleStats table and the postionsTable again.<br>
+I then print the rows in the hustleStats that have a null position to see which player names are still inconsistent.</p>
 
 </div>
 </div>
@@ -15770,8 +15770,8 @@ We then print the rows in the hustleStats that have a null position to see which
       <th>% Loose BallsRecovered OFF</th>
       <th>% Loose BallsRecovered DEF</th>
       <th>ChargesDrawn</th>
-      <th>Contested2PT Shots</th>
-      <th>Contested3PT Shots</th>
+      <th>Contested2PT Shots</th>
+      <th>Contested3PT Shots</th>
       <th>ContestedShots</th>
       <th>year</th>
       <th>Pos</th>
@@ -15902,7 +15902,7 @@ We then print the rows in the hustleStats that have a null position to see which
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The above 5 players are only in one table.  Due to the fact that they are relatively insignificant we drop them. These players are missing at random (<a href="https://www.theanalysisfactor.com/mar-and-mcar-missing-data/">MAR</a>) because the missing data concerns the observed data but not the missing data.</p>
+<p>The above 5 players are only in one table.  Due to the fact that they are relatively insignificant I drop them. These players are missing at random (<a href="https://www.theanalysisfactor.com/mar-and-mcar-missing-data/">MAR</a>) because the missing data concerns the observed data but not the missing data.</p>
 
 </div>
 </div>
@@ -15963,8 +15963,8 @@ We then print the rows in the hustleStats that have a null position to see which
       <th>% Loose BallsRecovered OFF</th>
       <th>% Loose BallsRecovered DEF</th>
       <th>ChargesDrawn</th>
-      <th>Contested2PT Shots</th>
-      <th>Contested3PT Shots</th>
+      <th>Contested2PT Shots</th>
+      <th>Contested3PT Shots</th>
       <th>ContestedShots</th>
       <th>year</th>
       <th>Pos</th>
@@ -16130,7 +16130,7 @@ We then print the rows in the hustleStats that have a null position to see which
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Next, we clean the hustleStats table.</p>
+<p>Next, I clean the hustleStats table.</p>
 <ol>
 <li>Change the "TEAM" column to be named "Team"</li>
 <li>Change any player with two positions to have one position</li>
@@ -16199,8 +16199,8 @@ We then print the rows in the hustleStats that have a null position to see which
       <th>Deflections</th>
       <th>Loose BallsRecovered</th>
       <th>ChargesDrawn</th>
-      <th>Contested2PT Shots</th>
-      <th>Contested3PT Shots</th>
+      <th>Contested2PT Shots</th>
+      <th>Contested3PT Shots</th>
       <th>ContestedShots</th>
       <th>year</th>
       <th>Pos</th>
@@ -16438,7 +16438,7 @@ We then print the rows in the hustleStats that have a null position to see which
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.C-Clean-Salary-Data">3.C Clean Salary Data<a class="anchor-link" href="#3.C-Clean-Salary-Data">&#182;</a></h3><p>First, we get the data from the table that is from the 2016-17 season and from the 2017-18 season.  Then we drop unused columns and remove any duplicates.  Lastly, we rename the year column in each table to match those of our other tables.</p>
+<h3 id="3.C-Clean-Salary-Data">3.C Clean Salary Data<a class="anchor-link" href="#3.C-Clean-Salary-Data">&#182;</a></h3><p>First, I get the data from the table that is from the 2016-17 season and from the 2017-18 season.  Then I drop unused columns and remove any duplicates.  Lastly, I rename the year column in each table to match those of my other tables.</p>
 
 </div>
 </div>
@@ -16545,7 +16545,7 @@ We then print the rows in the hustleStats that have a null position to see which
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>All our data is now clean.</p>
+<p>All my data is now clean.</p>
 
 </div>
 </div>
@@ -16560,7 +16560,7 @@ We then print the rows in the hustleStats that have a null position to see which
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.A-Statistics-Used-in-Calculation">4.A Statistics Used in Calculation<a class="anchor-link" href="#4.A-Statistics-Used-in-Calculation">&#182;</a></h3><p>The statistics we will use to calculate our hustle score are:</p>
+<h3 id="4.A-Statistics-Used-in-Calculation">4.A Statistics Used in Calculation<a class="anchor-link" href="#4.A-Statistics-Used-in-Calculation">&#182;</a></h3><p>The statistics I will use to calculate my hustle score are:</p>
 <ol>
 <li><p><strong>Screen Assists</strong> — A screen assist is a <a href="https://www.coachesclipboard.net/Screens.html">screen</a> that directly leads to a made field goal.</p>
 </li>
@@ -16577,7 +16577,7 @@ We then print the rows in the hustleStats that have a null position to see which
 <li><p><strong>Offensive Rebounds</strong> — An offensive rebound is when an offensive player secures a rebound.</p>
 </li>
 </ol>
-<p>These stastics are all hustle related. We believe that players who hustle more generally have higher values for these statistics. Therefore, these are the 7 statistics we use to calculate our hustle score.</p>
+<p>These stastics are all hustle related. I believe that players who hustle more generally have higher values for these statistics. Therefore, these are the 7 statistics I use to calculate my hustle score.</p>
 
 </div>
 </div>
@@ -16585,7 +16585,7 @@ We then print the rows in the hustleStats that have a null position to see which
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.B-Calculation">4.B Calculation<a class="anchor-link" href="#4.B-Calculation">&#182;</a></h3><p>In order to calculate our hustle score, we will use the sum of screen assists, deflections, loose balls recovered, charges drawn, contested shots, steals, and offensive rebounds.  However, if we just took the sum of those statistics for each player, certain statistics, such as contested shots, would effect the overall hustle score more than others because that statistic is generally higher than the others.  Therefore, we normalize each statistic by dividing its value by the maximum for that specific statistic. Finally, we calculate this hustle score on a per 36-minute basis, which is normal when calculating statistics in basketball. (<a href="https://bleacherreport.com/articles/657235-the-value-of-per-36-statistics-and-future-breakthrough-stars#slide0">Read more</a> on per 36-minute statistics.)</p>
+<h3 id="4.B-Calculation">4.B Calculation<a class="anchor-link" href="#4.B-Calculation">&#182;</a></h3><p>In order to calculate my hustle score, I will use the sum of screen assists, deflections, loose balls recovered, charges drawn, contested shots, steals, and offensive rebounds.  However, if I just took the sum of those statistics for each player, certain statistics, such as contested shots, would effect the overall hustle score more than others because that statistic is generally higher than the others.  Therefore, I normalize each statistic by dividing its value by the maximum for that specific statistic. Finally, I calculate this hustle score on a per 36-minute basis, which is normal when calculating statistics in basketball. (<a href="https://bleacherreport.com/articles/657235-the-value-of-per-36-statistics-and-future-breakthrough-stars#slide0">Read more</a> on per 36-minute statistics.)</p>
 
 </div>
 </div>
@@ -16642,8 +16642,8 @@ We then print the rows in the hustleStats that have a null position to see which
       <th>Deflections</th>
       <th>Loose BallsRecovered</th>
       <th>ChargesDrawn</th>
-      <th>Contested2PT Shots</th>
-      <th>Contested3PT Shots</th>
+      <th>Contested2PT Shots</th>
+      <th>Contested3PT Shots</th>
       <th>ContestedShots</th>
       <th>year</th>
       <th>Pos</th>
@@ -16861,8 +16861,8 @@ maxSteals per game: 			2.4
       <th>Deflections</th>
       <th>Loose BallsRecovered</th>
       <th>ChargesDrawn</th>
-      <th>Contested2PT Shots</th>
-      <th>Contested3PT Shots</th>
+      <th>Contested2PT Shots</th>
+      <th>Contested3PT Shots</th>
       <th>ContestedShots</th>
       <th>year</th>
       <th>Pos</th>
@@ -16986,7 +16986,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="5.-Look-for-Potential-Correlation-between-HustleScore-and-Other-Statistics">5. Look for Potential Correlation between HustleScore and Other Statistics<a class="anchor-link" href="#5.-Look-for-Potential-Correlation-between-HustleScore-and-Other-Statistics">&#182;</a></h2><h3 id="5.A-Age-vs.-HustleScore">5.A Age vs. HustleScore<a class="anchor-link" href="#5.A-Age-vs.-HustleScore">&#182;</a></h3><p>We hypothesize that younger players hustle more.</p>
+<h2 id="5.-Look-for-Potential-Correlation-between-HustleScore-and-Other-Statistics">5. Look for Potential Correlation between HustleScore and Other Statistics<a class="anchor-link" href="#5.-Look-for-Potential-Correlation-between-HustleScore-and-Other-Statistics">&#182;</a></h2><h3 id="5.A-Age-vs.-HustleScore">5.A Age vs. HustleScore<a class="anchor-link" href="#5.A-Age-vs.-HustleScore">&#182;</a></h3><p>I hypothesize that younger players hustle more.</p>
 
 </div>
 </div>
@@ -17063,7 +17063,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5.B-Minutes-Played-vs.-HustleScore">5.B Minutes Played vs. HustleScore<a class="anchor-link" href="#5.B-Minutes-Played-vs.-HustleScore">&#182;</a></h3><p>We hypothesize that players who play fewer minutes per game hustle more because they will have more energy than players who play more.</p>
+<h3 id="5.B-Minutes-Played-vs.-HustleScore">5.B Minutes Played vs. HustleScore<a class="anchor-link" href="#5.B-Minutes-Played-vs.-HustleScore">&#182;</a></h3><p>I hypothesize that players who play fewer minutes per game hustle more because they will have more energy than players who play more.</p>
 
 </div>
 </div>
@@ -17140,7 +17140,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5.C-Position-vs.-HustleScore">5.C Position vs. HustleScore<a class="anchor-link" href="#5.C-Position-vs.-HustleScore">&#182;</a></h3><p>We hypothesize that some positions might have a higher hustle score than others.</p>
+<h3 id="5.C-Position-vs.-HustleScore">5.C Position vs. HustleScore<a class="anchor-link" href="#5.C-Position-vs.-HustleScore">&#182;</a></h3><p>I hypothesize that some positions might have a higher hustle score than others.</p>
 
 </div>
 </div>
@@ -17213,7 +17213,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5.D-HustleScore-per-Position-between-Top-and-Bottom-Teams">5.D HustleScore per Position between Top and Bottom Teams<a class="anchor-link" href="#5.D-HustleScore-per-Position-between-Top-and-Bottom-Teams">&#182;</a></h3><p>We hypothesize that there might be a difference in hustle score between top and bottom teams by position. We define a top team to have 48 or more wins.</p>
+<h3 id="5.D-HustleScore-per-Position-between-Top-and-Bottom-Teams">5.D HustleScore per Position between Top and Bottom Teams<a class="anchor-link" href="#5.D-HustleScore-per-Position-between-Top-and-Bottom-Teams">&#182;</a></h3><p>I hypothesize that there might be a difference in hustle score between top and bottom teams by position. I define a top team to have 48 or more wins.</p>
 
 </div>
 </div>
@@ -17317,7 +17317,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5.E-Player-Salary-vs.-HustleScore">5.E Player Salary vs. HustleScore<a class="anchor-link" href="#5.E-Player-Salary-vs.-HustleScore">&#182;</a></h3><p>We explore the correlation between salary and HustleScore.</p>
+<h3 id="5.E-Player-Salary-vs.-HustleScore">5.E Player Salary vs. HustleScore<a class="anchor-link" href="#5.E-Player-Salary-vs.-HustleScore">&#182;</a></h3><p>I explore the correlation between salary and HustleScore.</p>
 
 </div>
 </div>
@@ -17374,8 +17374,8 @@ maxSteals per game: 			2.4
       <th>Deflections</th>
       <th>Loose BallsRecovered</th>
       <th>ChargesDrawn</th>
-      <th>Contested2PT Shots</th>
-      <th>Contested3PT Shots</th>
+      <th>Contested2PT Shots</th>
+      <th>Contested3PT Shots</th>
       <th>ContestedShots</th>
       <th>year</th>
       <th>Pos</th>
@@ -17572,7 +17572,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="6.-Predictions">6. Predictions<a class="anchor-link" href="#6.-Predictions">&#182;</a></h2><p>In the following section, we try to use our calculated hustle score to predict other statistics using Linear Regression models.</p>
+<h2 id="6.-Predictions">6. Predictions<a class="anchor-link" href="#6.-Predictions">&#182;</a></h2><p>In the following section, I try to use my calculated hustle score to predict other statistics using Linear Regression models.</p>
 
 </div>
 </div>
@@ -17580,7 +17580,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="6.A-Predicting-Player-Points-with-HustleScore">6.A Predicting Player Points with HustleScore<a class="anchor-link" href="#6.A-Predicting-Player-Points-with-HustleScore">&#182;</a></h3><p>We predict the number of points each player scores per game based on our calculated hustle score.</p>
+<h3 id="6.A-Predicting-Player-Points-with-HustleScore">6.A Predicting Player Points with HustleScore<a class="anchor-link" href="#6.A-Predicting-Player-Points-with-HustleScore">&#182;</a></h3><p>I predict the number of points each player scores per game based on my calculated hustle score.</p>
 
 </div>
 </div>
@@ -17639,8 +17639,8 @@ maxSteals per game: 			2.4
       <th>Deflections</th>
       <th>Loose BallsRecovered</th>
       <th>ChargesDrawn</th>
-      <th>Contested2PT Shots</th>
-      <th>Contested3PT Shots</th>
+      <th>Contested2PT Shots</th>
+      <th>Contested3PT Shots</th>
       <th>ContestedShots</th>
       <th>year</th>
       <th>Pos</th>
@@ -17856,7 +17856,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In the above plot, only SAC has a short violin with many points clustered around 0. Thus our calculated hustle score does not effectively predict player points.</p>
+<p>In the above plot, only SAC has a short violin with many points clustered around 0. Thus my calculated hustle score does not effectively predict player points.</p>
 
 </div>
 </div>
@@ -17864,7 +17864,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="6.B-Predicting-Player-Points-with-Regular-Statistics">6.B Predicting Player Points with Regular Statistics<a class="anchor-link" href="#6.B-Predicting-Player-Points-with-Regular-Statistics">&#182;</a></h3><p>We predict points using regular statistics to see if it is more effective than using our hustle statistics. The statistics we use are assists, blocks, turnovers, defensive rebounds, and field goal percentage.</p>
+<h3 id="6.B-Predicting-Player-Points-with-Regular-Statistics">6.B Predicting Player Points with Regular Statistics<a class="anchor-link" href="#6.B-Predicting-Player-Points-with-Regular-Statistics">&#182;</a></h3><p>I predict points using regular statistics to see if it is more effective than using my hustle statistics. The statistics I use are assists, blocks, turnovers, defensive rebounds, and field goal percentage.</p>
 
 </div>
 </div>
@@ -18175,7 +18175,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="6.C-Predicting-Player-Points-with-Regular-Statistics-and-HustleScore">6.C Predicting Player Points with Regular Statistics and HustleScore<a class="anchor-link" href="#6.C-Predicting-Player-Points-with-Regular-Statistics-and-HustleScore">&#182;</a></h3><p>We look to see if a combination of the hustle score with regular statistics predicts player points more effectively.</p>
+<h3 id="6.C-Predicting-Player-Points-with-Regular-Statistics-and-HustleScore">6.C Predicting Player Points with Regular Statistics and HustleScore<a class="anchor-link" href="#6.C-Predicting-Player-Points-with-Regular-Statistics-and-HustleScore">&#182;</a></h3><p>I look to see if a combination of the hustle score with regular statistics predicts player points more effectively.</p>
 
 </div>
 </div>
@@ -18477,7 +18477,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As we see here, the hustle score slightly improves the player points per game prediction for PHX but not for the rest of the teams.</p>
+<p>As I see here, the hustle score slightly improves the player points per game prediction for PHX but not for the rest of the teams.</p>
 
 </div>
 </div>
@@ -18485,7 +18485,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="6.D-Predicting-Team-Wins-with-Hustle-Score">6.D Predicting Team Wins with Hustle Score<a class="anchor-link" href="#6.D-Predicting-Team-Wins-with-Hustle-Score">&#182;</a></h3><p>We look to see if team hustle score (sum of individual hustle scores) predicts team wins.</p>
+<h3 id="6.D-Predicting-Team-Wins-with-Hustle-Score">6.D Predicting Team Wins with Hustle Score<a class="anchor-link" href="#6.D-Predicting-Team-Wins-with-Hustle-Score">&#182;</a></h3><p>I look to see if team hustle score (sum of individual hustle scores) predicts team wins.</p>
 
 </div>
 </div>
@@ -18542,8 +18542,8 @@ maxSteals per game: 			2.4
       <th>Deflections</th>
       <th>Loose BallsRecovered</th>
       <th>ChargesDrawn</th>
-      <th>Contested2PT Shots</th>
-      <th>Contested3PT Shots</th>
+      <th>Contested2PT Shots</th>
+      <th>Contested3PT Shots</th>
       <th>ContestedShots</th>
       <th>OREB</th>
       <th>STL</th>
@@ -18755,7 +18755,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="7.-There's-no-&quot;I&quot;-in-Team">7. There's no "I" in Team<a class="anchor-link" href="#7.-There's-no-&quot;I&quot;-in-Team">&#182;</a></h2><p>6.D showed a correlation between team HustleScore and wins. We explore that further in this section and focus more on teams as opposed to individual players.</p>
+<h2 id="7.-There's-no-&quot;I&quot;-in-Team">7. There's no "I" in Team<a class="anchor-link" href="#7.-There's-no-&quot;I&quot;-in-Team">&#182;</a></h2><p>6.D showed a correlation between team HustleScore and wins. I explore that further in this section and focus more on teams as opposed to individual players.</p>
 
 </div>
 </div>
@@ -19037,8 +19037,8 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As seen in the above plot with the high correlation coefficient r, there is a strong positive correlation between a team's HustleScore and its wins. This shows that our HustleScore is in fact significant and predicts wins better than other statistics that we have looked at.</p>
-<h2 id="7.B-Top-Teams-vs.-Bottom-Teams">7.B Top Teams vs. Bottom Teams<a class="anchor-link" href="#7.B-Top-Teams-vs.-Bottom-Teams">&#182;</a></h2><p>To further corroborate our results from 7.A we plot the differences between top and bottom teams for the HustleScore and for other statistics. If we see a significant difference between the top and bottom teams for the HustleScore but not for other statistics, then we have further shown that our HustleScore is meaningful.</p>
+<p>As seen in the above plot with the high correlation coefficient r, there is a strong positive correlation between a team's HustleScore and its wins. This shows that my HustleScore is in fact significant and predicts wins better than other statistics that I have looked at.</p>
+<h2 id="7.B-Top-Teams-vs.-Bottom-Teams">7.B Top Teams vs. Bottom Teams<a class="anchor-link" href="#7.B-Top-Teams-vs.-Bottom-Teams">&#182;</a></h2><p>To further corroborate my results from 7.A I plot the differences between top and bottom teams for the HustleScore and for other statistics. If I see a significant difference between the top and bottom teams for the HustleScore but not for other statistics, then I have further shown that my HustleScore is meaningful.</p>
 
 </div>
 </div>
@@ -19178,7 +19178,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As seen above, the ratio of the HustleScore between the top and bottom teams is almost 10% better than any of the other statistics we plotted. This shows that our HustleScore is significant.</p>
+<p>As seen above, the ratio of the HustleScore between the top and bottom teams is almost 10% better than any of the other statistics I plotted. This shows that my HustleScore is significant.</p>
 
 </div>
 </div>
@@ -19193,9 +19193,9 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In our project, we tried to create a meaningful statistic to gauge player performance. To do this, we used advanced statistics from the NBA to create what we called a <strong>HustleScore</strong> for each player. We had trouble finding correlation between a player's HustleScore and other statistics for individual players.  However, we noticed that a team's HustleScore had a significant positive correlation with a team's overall wins.</p>
-<p>In terms of future work, there are other advanced statistics that could be incorporated into calculating the HustleScore for each player. Some of these <a href="https://stats.nba.com/players/speed-distance/?sort=DIST_MILES_DEF&amp;dir=1&amp;Season=2017-18&amp;SeasonType=Regular%20Season">statistics</a> include average MPH, distance traveled, and boxouts. These statistics might improve our correlations and predictive models.</p>
-<p>Based on these findings, we would recommend that NBA general managers look more into a team's hustle when trying to create a championship team. Our statistics show that a team that hustles more wins more. Due to the fact that wins is the most important team statistic, we conclude that our HustleScore is a meaningful statistic. Moneyball 2.0?!</p>
+<p>In my project, I tried to create a meaningful statistic to gauge player performance. To do this, I used advanced statistics from the NBA to create what I called a <strong>HustleScore</strong> for each player. I had trouble finding correlation between a player's HustleScore and other statistics for individual players.  However, I noticed that a team's HustleScore had a significant positive correlation with a team's overall wins.</p>
+<p>In terms of future work, there are other advanced statistics that could be incorporated into calculating the HustleScore for each player. Some of these <a href="https://stats.nba.com/players/speed-distance/?sort=DIST_MILES_DEF&amp;dir=1&amp;Season=2017-18&amp;SeasonType=Regular%20Season">statistics</a> include average MPH, distance traveled, and boxouts. These statistics might improve my correlations and predictive models.</p>
+<p>Based on these findings, I would recommend that NBA general managers look more into a team's hustle when trying to create a championship team. my statistics show that a team that hustles more wins more. Due to the fact that wins is the most important team statistic, I conclude that my HustleScore is a meaningful statistic. Moneyball 2.0?!</p>
 
 </div>
 </div>
@@ -19203,7 +19203,7 @@ maxSteals per game: 			2.4
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="9.-Appendix">9. Appendix<a class="anchor-link" href="#9.-Appendix">&#182;</a></h2><p>Due to popular demand, we print out the top 10 values of HustleScore for each position. We also print out the top 10 team HustleScores for each season.</p>
+<h2 id="9.-Appendix">9. Appendix<a class="anchor-link" href="#9.-Appendix">&#182;</a></h2><p>Due to popular demand, I print out the top 10 values of HustleScore for each position. I also print out the top 10 team HustleScores for each season.</p>
 
 </div>
 </div>
